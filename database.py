@@ -400,6 +400,7 @@ class DinosaurDatabase:
         """Get all dinosaurs with comprehensive filtering options"""
         dinosaurs = list(self.dinosaurs.values())
         
+        # Make this less DRY?
         # Apply filters
         if period:
             dinosaurs = [d for d in dinosaurs if d.period == period]

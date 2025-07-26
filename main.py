@@ -6,13 +6,13 @@ from models import (
     DinosaurClade, DinosaurGroup, DinosaurLocomotion, DinosaurHabitat,
     FossilQuality, ErrorResponse
 )
-from database import db
+from database_postgres import db
 
 # Create FastAPI app with metadata
 app = FastAPI(
-    title="Comprehensive Dinosaur API",
-    description="A scientifically accurate read-only REST API for dinosaur data with detailed taxonomic, anatomical, and paleontological information based on Wikipedia sources.",
-    version="2.0.0",
+    title="Dinosaur API",
+    description="A comprehensive REST API for managing dinosaur data. Perfect for educational apps, games, or any project that needs dinosaur information!",
+    version="1.0.0",
     contact={
         "name": "Dinosaur API Support",
         "email": "support@dinosaurapi.com",
